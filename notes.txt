@@ -1,0 +1,35 @@
+1. first a normal function to text to speak
+    import pyttsx3
+2. speech recognition to text
+    import speech_recognition as sr 
+3. wishing function use import datetime
+    - take hour as varible the set 
+    three condition b/w 0-12, 12-18 and else
+4. write if-else condition in if 1: 
+    - open notepad
+    - open command prompt
+    - play music
+    - tell my ip address with the help of api and request.get
+    - open youtube 
+    - search keyword on google[todo=use google chrome as default]
+        use any browser to search
+        ```
+        import webbrowser
+
+        url = "https://www.example.com"
+
+        # Set  the path to the browser executable
+        browser_exe_path = r"C:\Program Files\Internet Explorer\iexplore.exe"
+
+        # Open the URL in the specified browser
+        webbrowser.register('custom', None, webbrowser.BackgroundBrowser(browser_exe_path))
+        webbrowser.get('custom').open(url)
+        ```
+    - sent my via whatsapp 
+    - sent play video on youtube of my choice
+    - sent email via secure-smtplib MODULE
+    - add no thanks to exit 
+5. sent all the function in while loop
+change if 1: to => while True:
+
+6. 

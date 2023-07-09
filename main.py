@@ -4,7 +4,7 @@ import datetime
 import os
 import random
 import webbrowser
-import pywhatkit as kit
+#import pywhatkit as kit
 import sys
 import time
 # import wikipedia
@@ -90,18 +90,21 @@ if __name__ == '__main__':
         #     results = wikipedia.summary(query, sentences=2)
         #     speak("according to wikipedia")
         #     speak(results)
-        elif "open youtube" in query:
-            speak("opening youtube")
-            webbrowser.open("www.youtube.com")
-        elif "open google" in query:
-            speak("Sir, what should i search on google")
-            cm = takecommand().lower()
-            webbrowser.get(f"{cm}")
-        elif "send message" in query:
-            kit.sendwhatmsg("+919891555336", "this is testing messaging", 2, 25)
 
-        elif "play songs on youtube" in query:
-            kit.playonyt("game sidhu moosewala")
+        # code is not working here
+
+        # elif "open youtube" in query:
+        #     speak("opening youtube")
+        #     webbrowser.open("www.youtube.com")
+        # elif "open google" in query:
+        #     speak("Sir, what should i search on google")
+        #     cm = takecommand().lower()
+        #     webbrowser.get(f"{cm}")
+        # elif "send message" in query:
+        #     kit.sendwhatmsg("+919891555336", "this is testing messaging", 2, 25)
+
+        # elif "play songs on youtube" in query:
+        #     kit.playonyt("game sidhu moosewala")
         
         # use import smtp link as module
         # elif "send email" in query:

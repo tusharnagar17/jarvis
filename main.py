@@ -76,6 +76,12 @@ if __name__ == '__main__':
             songs = os.listdir(music_dir)
             rd = random.choice(songs)
             os.startfile(os.path.join(music_dir, rd))
+            sys.exit()
+
+        elif "config" in query:
+            path_config = "C:\\web-dev\\jarvis\\config.cmd"
+            os.startfile(path_config)
+            
         
         elif "ip address" in query:
             ip = get('https://api.ipify.org').text
@@ -118,11 +124,10 @@ if __name__ == '__main__':
         #         print(e)
         #         speak("Sorry, I'm not able to sent the email")
         
-        elif "no thanks" in query:
+        elif "no thanks" or "sleep" or "terminate"  in query:
             speak("thanks for using me have a nice day")
             # import sys 
             sys.exit()
             
-        time.sleep(5)
         speak("sir, do you have any work for me")
 
